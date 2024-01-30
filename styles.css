@@ -1080,9 +1080,10 @@ button[name="join-club"] {
         padding: 98px;
         font-size: 44px;
         margin-bottom: 63px;
-        width: 64%;
+        width: 81%;
         padding: 70px;
-        font-size: 24px;
+        font-size: 25px;
+    }
     }
 
     .card>p {
