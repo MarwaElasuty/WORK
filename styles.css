@@ -9,142 +9,351 @@
 
 nav {
     display: flex;
+    padding: 35px;
     justify-content: space-between;
-    padding: 50px;
+    align-items: center;
     position: relative;
-    align-items: center;
+    width: 89%;
+    margin: auto;
+    column-gap: 27px;
 }
 
-nav ul {
+.main-ul {
     display: flex;
-    column-gap: 24px;
+    column-gap: 92px;
     list-style-type: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.main-ul a {
+    text-decoration: none;
+    background-color: black;
+}
+
+
+.nav-btns {
+    display: flex;
+    column-gap: 30px;
     align-items: center;
 }
 
-nav h2 {
-    font-size: 27px;
-}
-
-img[alt="menu"] {
+.menu-btns {
     display: none;
 }
 
-/* ul div media query */
-
-.text {}
-
-@media screen and (max-width: 1200px) and (min-width:992px) {
-    img[alt="menu"] {
-        display: none;
-    }
-
-    ul li {
-        padding: 25px;
-        background-color: rgb(37, 37, 37);
-        color: white;
-    }
+.menu-btns > img:nth-of-type(1){
+    padding-right: 10px;
 }
 
-@media screen and (max-width: 992px) and (min-width:786px) {
-    .ul-div {
-        display: none;
-    }
+.logo-div {
+    padding-top: 10px;
+}
 
-    img[alt="menu"] {
-        display: block;
-    }
+.nav-btns-w-search {
+    display: flex;
+    align-items: center;
+    column-gap: 21px;
+}
 
-    .ul-div {
-        position: absolute;
-        top: 68px;
-        right: 20px;
-        padding: 80px;
-        text-align: center;
-        border: 2px solid white;
-        border-radius: 28px;
-        font-size: 37px;
-        z-index: 1;
-        font-weight: 500;
-    }
+button[name="login"] {
+    background-color: inherit;
+    padding: 15px;
+    border-style: none;
+    font-size: 23px;
+}
 
-    nav ul {
+button[name="start"] {
+    padding: 11px;
+    width: 128px;
+    border-style: none;
+    font-size: 16px;
+    background-color: #1b903a;
+    color: white;
+    border-radius: 9px;
+}
+
+img[alt="menu-burger"] {
+    display: none;
+}
+
+.ul-list li{
+    background-color: black;
+}
+
+
+/* nav media query */
+
+@media screen and (max-width: 1200px) and (min-width:992px) {
+
+    .main-ul {
         flex-direction: column;
     }
 
-    ul li {
-        padding: 25px;
-        background-color: white;
+    .ul-list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: #000000;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    .main-ul a {
         color: white;
-        background-color: rgb(37, 37, 37);
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+
+    .ul-list li {
+        padding-bottom: 22px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+    .menu-btns {
+        display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) and (min-width:786px) {
+    .main-ul {
+        flex-direction: column;
+    }
+
+    .main-ul a {
+        color: white;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    .ul-list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: #000000;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
+    }
+
+    .ul-list li {
+        padding-bottom: 22px;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+
+
+    .menu-btns {
+        display: block;
+        padding: 5px;
+        border-radius: 10px;
     }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
-    .ul-div {
-        display: none;
-    }
 
-    img[alt="menu"] {
-        display: block;
-    }
-
-    .ul-div {
-        position: absolute;
-        top: 68px;
-        right: 20px;
-        padding: 80px;
-        text-align: center;
-        border: 2px solid white;
-        border-radius: 28px;
-        font-size: 37px;
-        z-index: 1;
-        font-weight: 500;
-    }
-
-    nav ul {
+    .main-ul {
         flex-direction: column;
     }
 
-    ul li {
-        padding: 25px;
+    .main-ul a {
+        color: white;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
         background-color: white;
         color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    .ul-list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: #000000;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
+    }
+
+    .ul-list li {
+        padding-bottom: 22px;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+
+
+
+    .menu-btns {
+        display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .ul-div {
-        display: none;
-    }
 
-    img[alt="menu"] {
-        display: block;
-    }
-
-    .ul-div {
-        position: absolute;
-        top: 68px;
-        right: 20px;
-        padding: 80px;
-        text-align: center;
-        border: 2px solid white;
-        border-radius: 28px;
-        font-size: 37px;
-        z-index: 1;
-        font-weight: 500;
-    }
-
-    nav ul {
+    .main-ul {
         flex-direction: column;
     }
 
-    ul li {
-        padding: 25px;
+
+    .main-ul a {
+        color: white;
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
         background-color: white;
         color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    .ul-list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: #000000;
+        color: black;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
+    }
+
+    .ul-list li {
+        padding-bottom: 22px;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+
+
+    .menu-btns {
+        display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
     }
 }
+
 
 .background-content {
     display: flex;
@@ -178,7 +387,7 @@ img[alt="menu"] {
 }
 
 .intro h1 {
-    font-size: 85px;
+    font-size: 77px;
     width: 75%;
     text-align: left;
 }
@@ -219,7 +428,6 @@ img[alt="background-person"] {
 @media screen and (max-width: 1200px) and (min-width:992px) {
     .intro h1 {
         width: 100%;
-        text-align: center;
      }
  
      .intro > div:nth-of-type(1){
@@ -232,7 +440,7 @@ img[alt="background-person"] {
     
 
     .intro p {
-        width: 76%;
+        width: 100%;
         margin: auto;
         font-size: 24px;
     }
@@ -247,12 +455,14 @@ img[alt="background-person"] {
         font-size: 30px;
     }
 
+    .intro{
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .intro h1 {
        width: 100%;
-       text-align: center;
 
     }
     .intro > div:nth-of-type(1){
@@ -265,7 +475,7 @@ img[alt="background-person"] {
     
 
     .intro p {
-        width: 76%;
+        width: 100%;
         margin: auto;
         font-size: 24px;
     }
@@ -277,13 +487,16 @@ img[alt="background-person"] {
 
     .start>p {
         font-size: 30px;
+    }
+    
+    .intro{
+        width: 95%;
     }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     .intro h1 {
         width: 100%;
-        text-align: center;
 
      }
  
@@ -297,7 +510,7 @@ img[alt="background-person"] {
     
 
     .intro p {
-        width: 69%;
+        width: 100%;
         margin: auto;
         font-size: 24px;
     }
@@ -310,12 +523,15 @@ img[alt="background-person"] {
         bottom: 448px;
         left: 154px;
     }
+    
+    .intro{
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .intro h1 {
         width: 100%;
-        text-align: center;
      }
      .intro > div:nth-of-type(1){
         width: 100%;
@@ -325,10 +541,8 @@ img[alt="background-person"] {
         width: 75%;
     }
     
- 
-
     .intro p {
-        width: 69%;
+        width: 100%;
         margin: auto;
         font-size: 24px;
     }
@@ -340,22 +554,11 @@ img[alt="background-person"] {
     img[alt="mini-one"] {
         left: 154px;
     }
+    
+    .intro{
+        width: 95%;
+    }
 }
-
-
-/* .background-content h1 {
-    font-weight: 700;
-    font-size: 99px;
-    width: 47%;
-    margin: auto;
-} */
-
-/* .background-side-text {
-    width: 49%;
-    padding: 19px;
-    text-align: left;
-    font-size: 20px;
-} */
 
 .join-club-btn-div {
     padding-top: 25px;
@@ -376,10 +579,6 @@ button[name="join-btn"] {
     flex-wrap: wrap;
     position: relative;
 }
-
-
-
-
 
 .relative-to-img-div {
     position: relative;
@@ -407,12 +606,8 @@ button[name="join-btn"] {
     padding-top: 10px;
 }
 
-/* mode media query , dark or white */
-
 
 /* background content media query */
-
-
 
 @media screen and (max-width: 1200px) and (min-width:992px) {
     .background-content {
@@ -461,12 +656,6 @@ button[name="join-btn"] {
         flex-wrap: wrap;
         width: 100%;
     }
-
-    /* .background-content h1 {
-        width: 67%;
-        font-size: 81px;
-    } */
-
     .background-side-text {
         margin: auto;
         width: 73%;
@@ -509,11 +698,6 @@ button[name="join-btn"] {
         text-align: center;
     }
 
-    /* .background-content h1 {
-        width: 86%;
-        font-size: 80px;
-    } */
-
     .background-side-text {
         margin: auto;
         width: 73%;
@@ -548,12 +732,6 @@ button[name="join-btn"] {
         flex-wrap: wrap;
         width: 100%;
     }
-
-    /* .background-content h1 {
-        width: 100%;
-        font-size: 80px;
-    } */
-
     .background-side-text {
         margin: auto;
         width: 73%;
@@ -605,13 +783,13 @@ button[name="join-btn"] {
     justify-content: center;
 }
 
-#card-text {
+.card-text {
     display: flex;
     justify-content: space-evenly;
     background-color: #40414a;
 }
 
-#card-text>p {
+.card-text>p {
     background-color: #40414a;
     font-size: 27px;
 }
@@ -623,8 +801,7 @@ button[name="join-btn"] {
     text-align: center;
     width: 22%;
     margin-top: 15px;
-    background-color: #40414a;
-    ;
+    background-color: #40414a;;
     border-style: none;
     border-radius: 20px;
 }
@@ -659,12 +836,12 @@ button[name="join-btn"] {
 /* Cards media query */
 
 @media screen and (max-width: 1200px) and (min-width:992px) {
-    #card-text>p {
+    .card-text>p {
         width: 100%;
     }
 
     .card-content {
-        width: 78%;
+        width: 84%;
         margin-bottom: 27px;
     }
 
@@ -684,13 +861,13 @@ button[name="join-btn"] {
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
-    #card-text>p {
+    .card-text>p {
         width: 100%;
     }
 
 
     .card-content {
-        width: 78%;
+        width: 84%;
         margin-bottom: 27px;
     }
 
@@ -709,13 +886,13 @@ button[name="join-btn"] {
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
-    #card-text>p {
+    .card-text>p {
         width: 100%;
     }
 
 
     .card-content {
-        width: 78%;
+        width: 84%;
         margin-bottom: 27px;
     }
 
@@ -736,13 +913,13 @@ button[name="join-btn"] {
 }
 
 @media screen and (max-width: 600px) {
-    #card-text>p {
+    .card-text>p {
         width: 100%;
     }
 
 
     .card-content {
-        width: 78%;
+        width: 84%;
         margin-bottom: 27px;
     }
 
@@ -768,6 +945,7 @@ button[name="join-btn"] {
     display: flex;
     padding: 30px;
     text-align: center;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -784,7 +962,8 @@ img[alt="offer-img"] {
     }
 
     .offer {
-        flex-wrap: wrap;
+        width: 88%;
+        margin: auto;
     }
     .offer-img-div{
         width: 100%;
@@ -798,7 +977,8 @@ img[alt="offer-img"] {
     }
 
     .offer {
-        flex-wrap: wrap;
+        width: 88%;
+        margin: auto;
     }
     .offer-img-div{
         width: 100%;
@@ -812,7 +992,8 @@ img[alt="offer-img"] {
     }
 
     .offer {
-        flex-wrap: wrap;
+        width: 88%;
+        margin: auto;
     }
     .offer-img-div{
         width: 100%;
@@ -826,7 +1007,8 @@ img[alt="offer-img"] {
     }
 
     .offer {
-        flex-wrap: wrap;
+        width: 88%;
+        margin: auto;
     }
     .offer-img-div{
         width: 100%;
@@ -835,7 +1017,7 @@ img[alt="offer-img"] {
 
 .training {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 40px;
     text-align: center;
     align-items: center;
@@ -871,7 +1053,8 @@ img[alt="training"] {
     .training {
         flex-wrap: wrap;
         justify-content: center;
-
+        width: 88%;
+        margin: auto;
     }
 
     .training > div:nth-of-type(1){
@@ -894,6 +1077,8 @@ img[alt="training"] {
     .training {
         flex-wrap: wrap;
         justify-content: center;
+        width: 88%;
+        margin: auto;
 
     }
     
@@ -918,6 +1103,8 @@ img[alt="training"] {
     .training {
         flex-wrap: wrap;
         justify-content: center;
+        width: 88%;
+        margin: auto;
     }
     
     .training > div:nth-of-type(1){
@@ -939,7 +1126,8 @@ img[alt="training"] {
 
 @media screen and (max-width: 600px) {
     .training {
-        flex-wrap: wrap;
+        width: 88%;
+        margin: auto;
     }
 
     img[alt="training"] {
@@ -1020,6 +1208,7 @@ img[alt="training"] {
     display: flex;
     margin: auto;
     background-color: #40414a;
+    align-items: center;
 }
 
 
@@ -1078,9 +1267,6 @@ button[name="join-club"] {
         font-size: 36px;
     }
 
-    .card>p {
-        width: 91%;
-    }
 
     button[name="join-club"] {
         font-size: 17px;
@@ -1124,10 +1310,7 @@ button[name="join-club"] {
     }
 }
 
-.card>p {
-    width: 88%;
 
-}
 
 button[name="join-club"] {
     font-size: 17px;
@@ -1171,7 +1354,7 @@ button[name="join-club"] {
         font-size: 44px;
         margin-bottom: 63px;
         width: 93%;
-        font-size: 36px;
+        font-size: 18px;
     }
 
     .card>p {
@@ -1221,7 +1404,7 @@ button[name="join-club"] {
         font-size: 44px;
         margin-bottom: 63px;
         width: 93%;
-        font-size: 36px;
+        font-size: 18px;
     }
 
     .card>p {
@@ -1273,4 +1456,8 @@ button[name="join-club"] {
 
 hr {
     background-color: #9191a3;
+}
+
+.display{
+    display: block;
 }
