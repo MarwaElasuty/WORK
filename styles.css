@@ -1134,6 +1134,11 @@ img[alt="training"] {
     text-align: center;
 }
 
+.membership > div:nth-of-type(1){
+    width: 86%;
+    margin: auto;
+}
+
 .membership h2 {
     padding-bottom: 25px;
     font-size: 54px;
@@ -1195,7 +1200,6 @@ img[alt="training"] {
 
 
 .see-more-div-membership>a {
-    font-size: 22px;
     color: rgb(56 98 179);
     font-weight: 600;
     text-decoration: none;
@@ -1220,7 +1224,6 @@ img[alt="training"] {
 
 img[alt="right-arrow"] {
     padding-left: 15px;
-    padding-bottom: 5px;
     background-color: #40414a;
 }
 
@@ -1266,16 +1269,7 @@ button[name="join-club"] {
         font-size: 50px;
     }
 
-    .join-club-div>button {
-        font-size: 23px;
-        font-size: 32px;
-        width: 280px;
-        padding: 18px;
-    }
 
-    .see-more-div-membership>a {
-        font-size: 39px;
-    }
 
     .member {
         padding-left: 0;
@@ -1316,9 +1310,9 @@ button[name="join-club"] {
 
 .join-club-div>button {
     font-size: 23px;
-    font-size: 32px;
+    font-size: 23px;
     width: 280px;
-    padding: 18px;
+    padding: 16px;
 }
 
 .member {
@@ -1326,7 +1320,7 @@ button[name="join-club"] {
 }
 
 .see-more-div-membership>a {
-    font-size: 39px;
+    font-size: 29px;
 }
 
 
@@ -1364,16 +1358,8 @@ button[name="join-club"] {
         font-size: 50px;
     }
 
-    .join-club-div>button {
-        font-size: 23px;
-        font-size: 32px;
-        width: 280px;
-        padding: 18px;
-    }
+ 
 
-    .see-more-div-membership>a {
-        font-size: 39px;
-    }
 
     .member {
         padding-left: 0;
@@ -1413,16 +1399,7 @@ button[name="join-club"] {
         font-size: 50px;
     }
 
-    .join-club-div>button {
-        font-size: 23px;
-        font-size: 32px;
-        width: 280px;
-        padding: 18px;
-    }
 
-    .see-more-div-membership>a {
-        font-size: 39px;
-    }
 
     .member {
         padding-left: 0;
