@@ -13,7 +13,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 89%;
     margin: auto;
     column-gap: 27px;
 }
@@ -115,8 +114,8 @@ img[alt="menu-burger"] {
         top: 80px;
         right: 20px;
         padding: 58px;
-        background-color: white;
-        color: black;
+        background-color: black;
+        color: white;
         font-size: 25px;
         z-index: 2;
         text-align: center;
@@ -435,24 +434,15 @@ img[alt="background-person"] {
     }
     
     .intro > div:nth-of-type(2){
-        width: 75%;
+        width: 47%;
     }
     
 
-    .intro p {
-        width: 100%;
-        margin: auto;
-        font-size: 24px;
-    }
 
     img[alt="mini-one"] {
 
         bottom: 448px;
         left: 154px;
-    }
-
-    .start>p {
-        font-size: 30px;
     }
 
     .intro{
@@ -470,23 +460,13 @@ img[alt="background-person"] {
     }
     
     .intro > div:nth-of-type(2){
-        width: 75%;
+        width: 47%;
     }
     
-
-    .intro p {
-        width: 100%;
-        margin: auto;
-        font-size: 24px;
-    }
 
     img[alt="mini-one"] {
         bottom: 448px;
         left: 154px;
-    }
-
-    .start>p {
-        font-size: 30px;
     }
     
     .intro{
@@ -505,20 +485,9 @@ img[alt="background-person"] {
     }
     
     .intro > div:nth-of-type(2){
-        width: 75%;
+        width: 47%;
     }
     
-
-    .intro p {
-        width: 100%;
-        margin: auto;
-        font-size: 24px;
-    }
-
-    .start>p {
-        font-size: 30px;
-    }
-
     img[alt="mini-one"] {
         bottom: 448px;
         left: 154px;
@@ -538,18 +507,10 @@ img[alt="background-person"] {
     }
     
     .intro > div:nth-of-type(2){
-        width: 75%;
-    }
-    
-    .intro p {
-        width: 100%;
-        margin: auto;
-        font-size: 24px;
+        width: 47%;
     }
 
-    .start>p {
-        font-size: 30px;
-    }
+
 
     img[alt="mini-one"] {
         left: 154px;
@@ -601,7 +562,7 @@ button[name="join-btn"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    column-gap: 78px;
+    column-gap: 64px;
     row-gap: 15px;
     padding-top: 10px;
 }
@@ -638,7 +599,7 @@ button[name="join-btn"] {
    
 
     .join-club-btn-div {
-        width: 77%;
+        width: 100%;
         margin: auto;
         display: flex;
         padding-top: 25px;
@@ -674,7 +635,7 @@ button[name="join-btn"] {
     }
 
     .join-club-btn-div {
-        width: 78%;
+        width: 100%;
         margin: auto;
         padding-top: 25px;
     }
@@ -717,7 +678,7 @@ button[name="join-btn"] {
     }
 
     .join-club-btn-div {
-        width: 78%;
+        width: 100%;
         margin: auto;
         padding-top: 25px;
     }
@@ -751,7 +712,7 @@ button[name="join-btn"] {
 
 
     .join-club-btn-div {
-        width: 78%;
+        width: 100%;
         margin: auto;
         padding-top: 25px;
     }
@@ -769,10 +730,11 @@ button[name="join-btn"] {
 
 .start>p {
     padding-bottom: 20px;
+    font-size: 25px;
 }
 
 .start>h2 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .cards {
@@ -827,11 +789,12 @@ button[name="join-btn"] {
 
 .offer-text {
     padding: 12px;
+    width: 60%;
 }
 
 
 .offer-img-div{
-    width: 60%;
+    width: 35%;
 }
 /* Cards media query */
 
@@ -844,16 +807,16 @@ button[name="join-btn"] {
         width: 84%;
         margin-bottom: 27px;
     }
-
+    .offer-text{
+        width: 100%;
+    }
  
 
     .offer p {
         width: 100%;
     }
 
-    .start>h2 {
-        font-size: 50px;
-    }
+  
 
     .see-more-div>a {
         font-size: 39px;
@@ -864,7 +827,9 @@ button[name="join-btn"] {
     .card-text>p {
         width: 100%;
     }
-
+    .offer-text{
+        width: 100%;
+    }
 
     .card-content {
         width: 84%;
@@ -876,9 +841,7 @@ button[name="join-btn"] {
         width: 100%;
     }
 
-    .start>h2 {
-        font-size: 50px;
-    }
+
 
     .see-more-div>a {
         font-size: 39px;
@@ -889,7 +852,9 @@ button[name="join-btn"] {
     .card-text>p {
         width: 100%;
     }
-
+    .offer-text{
+        width: 100%;
+    }
 
     .card-content {
         width: 84%;
@@ -901,9 +866,7 @@ button[name="join-btn"] {
         width: 100%;
     }
 
-    .start>h2 {
-        font-size: 50px;
-    }
+ 
 
     .see-more-div>a {
         font-size: 39px;
@@ -916,7 +879,9 @@ button[name="join-btn"] {
     .card-text>p {
         width: 100%;
     }
-
+    .offer-text{
+        width: 100%;
+    }
 
     .card-content {
         width: 84%;
@@ -932,9 +897,6 @@ button[name="join-btn"] {
         font-size: 21px;
     }
 
-    .start>h2 {
-        font-size: 50px;
-    }
 
     .see-more-div>a {
         font-size: 39px;
@@ -944,9 +906,12 @@ button[name="join-btn"] {
 .offer {
     display: flex;
     padding: 30px;
+    margin: auto;
+    width: 88%;
     text-align: center;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 img[alt="offer-img"] {
@@ -1023,23 +988,29 @@ img[alt="offer-img"] {
     align-items: center;
     column-gap: 95px;
     row-gap: 38px;
+    width: 88%;
+    margin: auto;
+    justify-content: space-evenly;
 }
 
 .training > div:nth-of-type(1){
-    width: 60%;
+    width: 35%;
+}
+
+.training > div:nth-of-type(2){
+    width: 56%;
 }
 
 .training p {
     font-size: 19px;
     text-align: left;
     padding-top: 25px;
-    width: 78%;
+    width: 87%;
 }
 
 .training h3 {
     font-size: 38px;
     text-align: left;
-    width: 57%;
 }
 
 img[alt="training"] {
@@ -1058,6 +1029,9 @@ img[alt="training"] {
     }
 
     .training > div:nth-of-type(1){
+        width: 100%;
+    }
+    .training > div:nth-of-type(2){
         width: 100%;
     }
     .training p {
@@ -1085,6 +1059,9 @@ img[alt="training"] {
     .training > div:nth-of-type(1){
         width: 100%;
     }
+    .training > div:nth-of-type(2){
+        width: 100%;
+    }
 
     img[alt="training"] {
         width: 100%;
@@ -1110,7 +1087,9 @@ img[alt="training"] {
     .training > div:nth-of-type(1){
         width: 100%;
     }
-
+    .training > div:nth-of-type(2){
+        width: 100%;
+    }
     img[alt="training"] {
         width: 100%;
     }
@@ -1136,6 +1115,9 @@ img[alt="training"] {
 
     
     .training > div:nth-of-type(1){
+        width: 100%;
+    }
+    .training > div:nth-of-type(2){
         width: 100%;
     }
     .training p {
