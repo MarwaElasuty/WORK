@@ -166,6 +166,15 @@ img[alt="menu"] {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.intro > div:nth-of-type(1){
+    width: 61%;
+}
+
+.intro > div:nth-of-type(2){
+    width: 23%;
 }
 
 .intro h1 {
@@ -182,16 +191,6 @@ img[alt="menu"] {
     font-size: 24px;
 }
 
-.workout-desc-div {
-    width: 69%;
-}
-
-/* .background-img-div {
-    position: absolute;
-    top: 58px;
-    right: 212px;
-} */
-
 
 img[alt="mini-one"] {
     position: relative;
@@ -201,16 +200,9 @@ img[alt="mini-one"] {
 
 img[alt="mini-two"] {
     position: relative;
-    bottom: 135px;
+    bottom: 155px;
     left: 52px;
 }
-
-/* img[alt="mini-one-again"]{
-    position: relative;
-    bottom: 135px;
-    left: 52px;
-} */
-
 
 img[alt="run"] {
     background-color: #EF8964;
@@ -220,18 +212,24 @@ img[alt="run"] {
 
 
 img[alt="background-person"] {
-    width: 281px;
+    width: 100%;
 }
 
 /* intro media query */
 @media screen and (max-width: 1200px) and (min-width:992px) {
     .intro h1 {
-        font-size: 81px;
-        width: 143%;
-        margin: auto;
+        width: 100%;
         text-align: center;
-
+     }
+ 
+     .intro > div:nth-of-type(1){
+        width: 100%;
     }
+    
+    .intro > div:nth-of-type(2){
+        width: 75%;
+    }
+    
 
     .intro p {
         width: 76%;
@@ -253,12 +251,18 @@ img[alt="background-person"] {
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .intro h1 {
-        font-size: 81px;
-        width: 143%;
-        margin: auto;
-        text-align: center;
+       width: 100%;
+       text-align: center;
 
     }
+    .intro > div:nth-of-type(1){
+        width: 100%;
+    }
+    
+    .intro > div:nth-of-type(2){
+        width: 75%;
+    }
+    
 
     .intro p {
         width: 76%;
@@ -278,12 +282,19 @@ img[alt="background-person"] {
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     .intro h1 {
-        font-size: 81px;
-        width: 143%;
-        margin: auto;
+        width: 100%;
         text-align: center;
 
+     }
+ 
+     .intro > div:nth-of-type(1){
+        width: 100%;
     }
+    
+    .intro > div:nth-of-type(2){
+        width: 75%;
+    }
+    
 
     .intro p {
         width: 69%;
@@ -303,12 +314,18 @@ img[alt="background-person"] {
 
 @media screen and (max-width: 600px) {
     .intro h1 {
-        font-size: 71px;
-        width: 143%;
-        margin: auto;
+        width: 100%;
         text-align: center;
-
+     }
+     .intro > div:nth-of-type(1){
+        width: 100%;
     }
+    
+    .intro > div:nth-of-type(2){
+        width: 75%;
+    }
+    
+ 
 
     .intro p {
         width: 69%;
@@ -346,12 +363,11 @@ img[alt="background-person"] {
 
 button[name="join-btn"] {
     padding: 20px;
-    /* margin: 10px; */
     border-radius: 20px;
     border-style: none;
     background-color: #f46632;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .content {
@@ -361,12 +377,7 @@ button[name="join-btn"] {
     position: relative;
 }
 
-/* img[alt="background-person"] {
-    width: 302px;
-    position: absolute;
-    right: 225px;
-    top: 56px;
-} */
+
 
 
 
@@ -374,6 +385,9 @@ button[name="join-btn"] {
     position: relative;
 }
 
+.sponsors-container {
+    margin: auto;
+}
 
 .sponsors {
     padding: 33px;
@@ -426,9 +440,7 @@ button[name="join-btn"] {
 
     }
 
-    img[alt="background-person"] {
-        width: 263px;
-    }
+   
 
     .join-club-btn-div {
         width: 77%;
@@ -462,10 +474,6 @@ button[name="join-btn"] {
 
     .absolute-img-div {
         margin: auto;
-    }
-
-    img[alt="background-person"] {
-        width: 263px;
     }
 
     .background-img-div {
@@ -515,9 +523,6 @@ button[name="join-btn"] {
         margin: auto;
     }
 
-    img[alt="background-person"] {
-        width: 263px;
-    }
 
     .background-img-div {
         position: unset;
@@ -566,9 +571,6 @@ button[name="join-btn"] {
 
     }
 
-    img[alt="background-person"] {
-        width: 263px;
-    }
 
     .join-club-btn-div {
         width: 78%;
@@ -611,6 +613,7 @@ button[name="join-btn"] {
 
 #card-text>p {
     background-color: #40414a;
+    font-size: 27px;
 }
 
 
@@ -624,9 +627,9 @@ button[name="join-btn"] {
     ;
     border-style: none;
     border-radius: 20px;
-    font-size: 17px;
-
 }
+
+
 
 .card-content>h3 {
     padding-bottom: 15px;
@@ -635,9 +638,9 @@ button[name="join-btn"] {
 }
 
 .offer p {
-       font-size: 17px;
-       margin: auto;
-       text-align: left;
+    font-size: 17px;
+    text-align: left;
+    width: 84%;
 }
 
 .offer h2 {
@@ -645,25 +648,27 @@ button[name="join-btn"] {
     text-align: left;
 }
 
-.offer-text{
-    padding: 109px;
+.offer-text {
+    padding: 12px;
 }
 
+
+.offer-img-div{
+    width: 60%;
+}
 /* Cards media query */
 
 @media screen and (max-width: 1200px) and (min-width:992px) {
     #card-text>p {
-        width: 87%;
+        width: 100%;
     }
 
     .card-content {
-        width: 43%;
-        font-size: 20px;
+        width: 78%;
+        margin-bottom: 27px;
     }
 
-    .offer-img-div {
-        margin: auto;
-    }
+ 
 
     .offer p {
         width: 100%;
@@ -680,21 +685,15 @@ button[name="join-btn"] {
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     #card-text>p {
-        width: 90%;
-        font-size: 24px;
+        width: 100%;
     }
+
 
     .card-content {
-        width: 86%;
-        font-size: 20px;
-        padding: 110px;
+        width: 78%;
         margin-bottom: 27px;
-
     }
 
-    .offer-img-div {
-        margin: auto;
-    }
 
     .offer p {
         width: 100%;
@@ -711,18 +710,15 @@ button[name="join-btn"] {
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     #card-text>p {
-        width: 98%;
+        width: 100%;
     }
+
 
     .card-content {
-        width: 98%;
-        font-size: 20px;
-
+        width: 78%;
+        margin-bottom: 27px;
     }
 
-    .offer-img-div {
-        margin: auto;
-    }
 
     .offer p {
         width: 100%;
@@ -744,10 +740,10 @@ button[name="join-btn"] {
         width: 100%;
     }
 
-    .card-content {
-        width: 100%;
-        font-size: 20px;
 
+    .card-content {
+        width: 78%;
+        margin-bottom: 27px;
     }
 
     .offer h2 {
@@ -770,15 +766,14 @@ button[name="join-btn"] {
 
 .offer {
     display: flex;
-    flex-wrap: nowrap;
-    padding: 69px;
+    padding: 30px;
     text-align: center;
     align-items: center;
 }
 
 img[alt="offer-img"] {
     border-radius: 8px;
-    width: 550px;
+    width: 100%;
 }
 
 /* offer media query */
@@ -791,6 +786,9 @@ img[alt="offer-img"] {
     .offer {
         flex-wrap: wrap;
     }
+    .offer-img-div{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
@@ -801,6 +799,9 @@ img[alt="offer-img"] {
 
     .offer {
         flex-wrap: wrap;
+    }
+    .offer-img-div{
+        width: 100%;
     }
 }
 
@@ -813,6 +814,9 @@ img[alt="offer-img"] {
     .offer {
         flex-wrap: wrap;
     }
+    .offer-img-div{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -824,16 +828,23 @@ img[alt="offer-img"] {
     .offer {
         flex-wrap: wrap;
     }
+    .offer-img-div{
+        width: 100%;
+    }
 }
 
 .training {
     display: flex;
     flex-wrap: nowrap;
-    padding: 81px;
+    padding: 40px;
     text-align: center;
     align-items: center;
     column-gap: 95px;
     row-gap: 38px;
+}
+
+.training > div:nth-of-type(1){
+    width: 60%;
 }
 
 .training p {
@@ -851,7 +862,7 @@ img[alt="offer-img"] {
 
 img[alt="training"] {
     border-radius: 8px;
-    width: 460px;
+    width: 100%;
 }
 
 /* training media query */
@@ -863,11 +874,18 @@ img[alt="training"] {
 
     }
 
+    .training > div:nth-of-type(1){
+        width: 100%;
+    }
     .training p {
-        font-size: 21px;
+        width: 100%;
     }
 
     img[alt="training"] {
+        width: 100%;
+    }
+
+    .training h3 {
         width: 100%;
     }
 }
@@ -878,13 +896,21 @@ img[alt="training"] {
         justify-content: center;
 
     }
+    
+    .training > div:nth-of-type(1){
+        width: 100%;
+    }
 
     img[alt="training"] {
         width: 100%;
     }
 
     .training p {
-        font-size: 21px;
+        width: 100%;
+    }
+
+    .training h3 {
+        width: 100%;
     }
 }
 
@@ -893,13 +919,21 @@ img[alt="training"] {
         flex-wrap: wrap;
         justify-content: center;
     }
+    
+    .training > div:nth-of-type(1){
+        width: 100%;
+    }
 
     img[alt="training"] {
         width: 100%;
     }
 
     .training p {
-        font-size: 21px;
+        width: 100%;
+    }
+
+    .training h3 {
+        width: 100%;
     }
 }
 
@@ -912,12 +946,16 @@ img[alt="training"] {
         width: 100%;
     }
 
+    
+    .training > div:nth-of-type(1){
+        width: 100%;
+    }
     .training p {
-        font-size: 21px;
+        width: 100%;
     }
 
     .training h3 {
-        font-size: 25px;
+        width: 100%;
     }
 }
 
@@ -931,7 +969,7 @@ img[alt="training"] {
     font-size: 54px;
 }
 
-.member{
+.member {
     text-align: left;
     padding-left: 150px
 }
@@ -948,11 +986,11 @@ img[alt="training"] {
 }
 
 .card {
-    width: 34%;
+    width: 40%;
     background-color: #40414a;
-    padding: 70px;
     color: white;
     font-size: 22px;
+    padding: 50px;
 }
 
 .card>ul {
@@ -1034,8 +1072,10 @@ button[name="join-club"] {
 @media screen and (max-width: 1200px) and (min-width:992px) {
     .card {
         width: 35%;
-        padding: 70px;
-        font-size: 22px;
+        font-size: 44px;
+        margin-bottom: 63px;
+        width: 93%;
+        font-size: 36px;
     }
 
     .card>p {
@@ -1069,7 +1109,7 @@ button[name="join-club"] {
         font-size: 39px;
     }
 
-    .member{
+    .member {
         padding-left: 0;
     }
 }
@@ -1077,61 +1117,61 @@ button[name="join-club"] {
 @media screen and (max-width: 992px) and (min-width:786px) {
     .card {
         width: 100%;
-        padding: 98px;
         font-size: 44px;
         margin-bottom: 63px;
-        width: 81%;
-        padding: 70px;
-        font-size: 25px;
-    }
-    }
-
-    .card>p {
-        width: 88%;
-
-    }
-
-    button[name="join-club"] {
-        font-size: 17px;
-    }
-
-    .see-more-div {
-        width: 86%;
-    }
-
-    .see-more-div>a {
-        font-size: 29px;
-    }
-
-    .membership h2 {
-        font-size: 54px;
-    }
-
-    .membership-cards h2 {
-        font-size: 50px;
-    }
-
-    .join-club-div>button {
-        font-size: 23px;
-        font-size: 32px;
-        width: 280px;
-        padding: 18px;
-    }
-
-    .member{
-        padding-left: 0;
-    }
-
-    .see-more-div-membership>a {
-        font-size: 39px;
+        width: 93%;
+        font-size: 36px;
     }
 }
+
+.card>p {
+    width: 88%;
+
+}
+
+button[name="join-club"] {
+    font-size: 17px;
+}
+
+.see-more-div {
+    width: 86%;
+}
+
+.see-more-div>a {
+    font-size: 29px;
+}
+
+.membership h2 {
+    font-size: 54px;
+}
+
+.membership-cards h2 {
+    font-size: 50px;
+}
+
+.join-club-div>button {
+    font-size: 23px;
+    font-size: 32px;
+    width: 280px;
+    padding: 18px;
+}
+
+.member {
+    padding-left: 0;
+}
+
+.see-more-div-membership>a {
+    font-size: 39px;
+}
+
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     .card {
         width: 100%;
-        padding: 75px;
-        font-size: 22px;
+        font-size: 44px;
+        margin-bottom: 63px;
+        width: 93%;
+        font-size: 36px;
     }
 
     .card>p {
@@ -1170,16 +1210,18 @@ button[name="join-club"] {
         font-size: 39px;
     }
 
-    .member{
+    .member {
         padding-left: 0;
     }
 }
 
 @media screen and (max-width: 600px) {
     .card {
-        padding: 60px;
         width: 100%;
-        font-size: 22px;
+        font-size: 44px;
+        margin-bottom: 63px;
+        width: 93%;
+        font-size: 36px;
     }
 
     .card>p {
@@ -1217,15 +1259,18 @@ button[name="join-club"] {
         font-size: 39px;
     }
 
-    .member{
+    .member {
         padding-left: 0;
     }
 }
 
+.offers-list{
+    padding: 20px;
+}
 .offers-list li {
     color: white;
 }
 
-hr{
+hr {
     background-color: #9191a3;
 }
