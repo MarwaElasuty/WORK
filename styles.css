@@ -573,7 +573,7 @@ button[name="join-btn"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    column-gap: 64px;
+    column-gap: 53px;
     row-gap: 15px;
     padding-top: 10px;
 }
@@ -764,7 +764,7 @@ button[name="join-btn"] {
 
 .card-text>p {
     background-color: #40414a;
-    font-size: 27px;
+    font-size: 22px;
 }
 
 
@@ -783,7 +783,7 @@ button[name="join-btn"] {
 
 .card-content>h3 {
     padding-bottom: 15px;
-    font-size: 22px;
+    font-size: 27px;
     background-color: #40414a;
 }
 
@@ -815,7 +815,7 @@ button[name="join-btn"] {
     }
 
     .card-content {
-        width: 84%;
+        width: 41%;
         margin-bottom: 27px;
     }
     .offer-text{
@@ -843,7 +843,7 @@ button[name="join-btn"] {
     }
 
     .card-content {
-        width: 84%;
+        width: 63%;
         margin-bottom: 27px;
     }
 
@@ -868,7 +868,7 @@ button[name="join-btn"] {
     }
 
     .card-content {
-        width: 84%;
+        width: 63%;
         margin-bottom: 27px;
     }
 
@@ -895,7 +895,7 @@ button[name="join-btn"] {
     }
 
     .card-content {
-        width: 84%;
+        width: 63%;
         margin-bottom: 27px;
     }
 
