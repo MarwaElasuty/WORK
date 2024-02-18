@@ -94,7 +94,7 @@ img[alt="menu-burger"] {
         display: none;
         position: absolute;
         top: 99px;
-        right: 20px;
+        right: 34px;
         border: 2px solid white;
         padding: 95px;
         background-color: #000000;
@@ -113,7 +113,7 @@ img[alt="menu-burger"] {
         display: none;
         position: absolute;
         top: 99px;
-        right: 20px;
+        right: 34px;
         padding: 95px;
         background-color: black;
         color: white;
@@ -178,7 +178,7 @@ img[alt="menu-burger"] {
         display: none;
         position: absolute;
         top: 99px;
-        right: 20px;
+        right: 34px;
         padding: 95px;
         background-color: white;
         color: black;
@@ -192,7 +192,7 @@ img[alt="menu-burger"] {
         display: none;
         position: absolute;
         top: 99px;
-        right: 20px;
+        right: 34px;
         border: 2px solid white;
         padding: 95px;
         background-color: #000000;
@@ -251,7 +251,7 @@ img[alt="menu-burger"] {
         display: none;
         position: absolute;
         top: 80px;
-        right: 20px;
+        right: 34px;
         padding: 58px;
         background-color: white;
         color: black;
@@ -265,7 +265,7 @@ img[alt="menu-burger"] {
         display: none;
         position: absolute;
         top: 99px;
-        right: 20px;
+        right: 34px;
         border: 2px solid white;
         padding: 95px;
         background-color: #000000;
@@ -322,7 +322,7 @@ img[alt="menu-burger"] {
         display: none;
         position: absolute;
         top: 99px;
-        right: 20px;
+        right: 34px;
         padding: 95px;
         background-color: white;
         color: black;
@@ -336,7 +336,7 @@ img[alt="menu-burger"] {
         display: none;
         position: absolute;
         top: 99px;
-        right: 20px;
+        right: 34px;
         border: 2px solid white;
         padding: 95px;
         background-color: #000000;
@@ -573,6 +573,7 @@ button[name="join-btn"] {
 
 .sponsors {
     padding: 33px;
+    font-size: 22px;
 }
 
 #sponsor-title {
@@ -629,7 +630,7 @@ button[name="join-btn"] {
     }
 
     button[name="join-btn"] {
-        font-size: 25px;
+        font-size: 33px;
     }
 
 }
@@ -663,7 +664,7 @@ button[name="join-btn"] {
     }
 
     button[name="join-btn"] {
-        font-size: 25px;
+        font-size: 33px;
     }
 }
 
@@ -706,7 +707,7 @@ button[name="join-btn"] {
     }
 
     button[name="join-btn"] {
-        font-size: 25px;
+        font-size: 33px;
     }
 }
 
@@ -740,7 +741,7 @@ button[name="join-btn"] {
     }
 
     button[name="join-btn"] {
-        font-size: 25px;
+        font-size: 33px;
     }
 }
 
@@ -781,11 +782,11 @@ button[name="join-btn"] {
 
 
 .card-content {
-    padding: 67px;
+    padding: 84px;
     text-align: center;
     width: 22%;
     margin-top: 15px;
-    background-color: #40414a;;
+    background-color: #40414a;
     border-style: none;
     border-radius: 20px;
 }
@@ -823,6 +824,7 @@ button[name="join-btn"] {
 @media screen and (max-width: 1200px) and (min-width:992px) {
     .card-text>p {
         width: 100%;
+        font-size: 32px;
     }
 
     .card-content {
@@ -843,14 +845,13 @@ button[name="join-btn"] {
     .see-more-div>a {
         font-size: 39px;
     }
-    .card-text>p{
-        font-size: 26px;
-    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .card-text>p {
         width: 100%;
+        font-size: 32px;
+
     }
     .offer-text{
         width: 100%;
@@ -871,14 +872,14 @@ button[name="join-btn"] {
     .see-more-div>a {
         font-size: 39px;
     }
-    .card-text>p{
-        font-size: 26px;
-    }
+
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     .card-text>p {
         width: 100%;
+        font-size: 32px;
+
     }
     .offer-text{
         width: 100%;
@@ -900,14 +901,13 @@ button[name="join-btn"] {
         font-size: 39px;
     }
 
-    .card-text>p{
-        font-size: 26px;
-    }
 }
 
 @media screen and (max-width: 600px) {
     .card-text>p {
         width: 100%;
+        font-size: 32px;
+
     }
     .offer-text{
         width: 100%;
@@ -930,9 +930,6 @@ button[name="join-btn"] {
 
     .see-more-div>a {
         font-size: 39px;
-    }
-    .card-text>p{
-        font-size: 26px;
     }
 }
 
@@ -1282,7 +1279,7 @@ button[name="join-club"] {
         font-size: 44px;
         margin-bottom: 63px;
         width: 93%;
-        font-size: 36px;
+        font-size: 28px;
     }
 
 
@@ -1315,7 +1312,7 @@ button[name="join-club"] {
         font-size: 44px;
         margin-bottom: 63px;
         width: 93%;
-        font-size: 36px;
+        font-size: 28px;
     }
 }
 
@@ -1343,9 +1340,9 @@ button[name="join-club"] {
 
 .join-club-div>button {
     font-size: 23px;
-    font-size: 25px;
-    width: 280px;
-    padding: 16px;
+    font-size: 30px;
+    width: 298px;
+    padding: 19px;
 }
 
 .member {
@@ -1353,7 +1350,7 @@ button[name="join-club"] {
 }
 
 .see-more-div-membership>a {
-    font-size: 29px;
+    font-size: 32px;
 }
 
 
