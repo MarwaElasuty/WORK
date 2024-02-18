@@ -9,7 +9,7 @@
 
 nav {
     display: flex;
-    padding: 35px;
+    padding: 40px;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -140,9 +140,6 @@ img[alt="menu-burger"] {
         display: block;
     }
 
-    nav {
-        padding: 32px;
-    }
 
     .nav-btns {
         display: none;
@@ -211,10 +208,6 @@ img[alt="menu-burger"] {
         padding-bottom: 32px;
         font-size: 37px;
 
-    }
-
-    nav {
-        padding: 32px;
     }
 
     .nav-btns {
@@ -286,9 +279,6 @@ img[alt="menu-burger"] {
 
     }
 
-    nav {
-        padding: 32px;
-    }
 
     .nav-btns {
         display: none;
@@ -355,10 +345,6 @@ img[alt="menu-burger"] {
         padding-bottom: 32px;
         font-size: 37px;
 
-    }
-
-    nav {
-        padding: 32px;
     }
 
     .nav-btns {
